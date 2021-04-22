@@ -13,7 +13,6 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: #f7f7f7;
-
 }
 
 .wrapper {
@@ -37,7 +36,7 @@ body{
 }
 
 .form form {
-    margin: 20px;   
+    margin: 20px 0;   
 }
 
 .form form .error-txt{
@@ -64,6 +63,7 @@ form .name-details .field:last-child{
 
 .form form .field {
     display: flex;
+    position: relative;
     flex-direction: column;
     margin-bottom: 10px;
 }
@@ -83,4 +83,106 @@ form .name-details .field:last-child{
     padding: 0 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.form form .image input {
+    font-size:17px ;
+}
+
+.form form .button input {
+    margin-right: 13px;
+    height: 45px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    background: #333;
+    color:  #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form form .field i {
+    position:absolute;
+    right: 15px;
+    color: #ccc;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form .link {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.form .link a {
+    color: #333;
+}
+
+.form .link a:hover {
+    text-decoration: underline;
+}
+
+/* Users Area CSS Code */
+.users {
+    padding: 25px 30px;
+}
+
+.users header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+
+}
+
+.wrapper img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.users header .content {
+    display: flex;
+}
+.users header .content img {
+    height: 50px;
+    width: 50px;
+}
+
+.users header .details {
+    margin-left:15px ;
+}
+
+.users header .details span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.users header .logout {
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 15px;
+    background: #333;
+    border-radius: 5px;
+}
+
+.users .search {
+    margin: 20px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.users .search .text {
+    font-size: 18px;
+}
+
+.users .search input {
+    position: absolute;
+    height: 42px;
+    width: 100%;
+    border: 1px solid #ccc;
 }
