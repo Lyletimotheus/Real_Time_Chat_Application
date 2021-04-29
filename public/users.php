@@ -1,22 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatter Messenger</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
+<?php 
+session_start();
+$unique_id = $_SESSION['unique_id'];
+if(!isset($unique_id)){
+    header("location:login.php");
+}
+require_once("php/partials/header.php");
+require_once("../database/config.php");
+?>
 <body>
     <div class="wrapper">
         <section class="users">
             <header>
+            <?php 
+            $stmt = $conn -> prepare("SELECT * FROM users WHERE unique_id = :unique_id");
+            $stmt -> bindParam(':unique_id', $unique_id);
+            $stmt -> execute();
+            if($stmt -> rowCount() > 0){
+                $data = $stmt -> fetch();
+            }
+ 
+            ?>
                 <div class="content">
-                <img src="images/img.jpg" alt="">
+                <img src="php/images/<?php echo $data['img'] ?>" alt="">
                 <div class="details">
-                    <span>Lyle Timotheus</span>
-                    <p>Active Now</p>
+                    <span><?php echo $data['fname']. " " . $data['lname'] ?></span>
+                    <p><?php echo $data['status'] ?></p>
                 </div>
                 </div>
                 <a href="#" class="logout">Logout</a>

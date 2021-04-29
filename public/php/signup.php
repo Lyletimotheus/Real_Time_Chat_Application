@@ -1,7 +1,7 @@
 <?php
 session_start();
-include_once("../../database/config.php");
-include_once("./functions/userInput.php");
+require_once("../../database/config.php");
+require_once("./functions/userInput.php");
 
 $fname = test_input($_POST["fname"]);
 $lname = test_input($_POST["lname"]);

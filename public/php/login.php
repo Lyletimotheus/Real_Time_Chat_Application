@@ -1,7 +1,7 @@
 <?php
 session_start();
-include_once("../../database/config.php");
-include_once("./functions/userInput.php");
+require_once("../../database/config.php");
+require_once("./functions/userInput.php");
 $email = test_input($_POST["email"]);
 $password = test_input($_POST["password"]);
 
