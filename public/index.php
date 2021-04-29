@@ -19,29 +19,29 @@
                 <div class="name-details">
                     <div class="field input">
                         <label>First Name</label>
-                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="First Name" name="fname">
                     </div>
 
                     <div class="field input">
                         <label>Last Name</label>
-                        <input type="text" placeholder="Last Name">
+                        <input type="text" placeholder="Last Name" name="lname">
                     </div>
                 </div> <!-- /.name-details -->
 
                 <div class="field input">
                     <label>Email Address</label>
-                    <input type="email" placeholder="Enter your email address">
+                    <input type="email" placeholder="Enter your email address" name="email">
                 </div>
 
                 <div class="field input">
                     <label>Password</label>
-                    <input type="password" placeholder="Enter your password">
+                    <input type="password" placeholder="Enter your password" name="password">
                     <i class="fas fa-eye"></i>
                 </div>
                 
                 <div class="field image">
                     <label>Select Image</label>
-                    <input type="file">
+                    <input type="file" name="image" required>
                 </div>
 
                 <div class="field button">
