@@ -12,9 +12,9 @@
     <div class="wrapper">
         <section class="form signup">
             <header>Chatter Messenger</header>
-            <form action="#">
+            <form action="#" enctype="multipart/form-data">
 
-                <div class="error-txt">This is an error message!</div>
+                <div class="error-txt"></div>
                 
                 <div class="name-details">
                     <div class="field input">
