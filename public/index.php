@@ -12,7 +12,7 @@
     <div class="wrapper">
         <section class="form signup">
             <header>Chatter Messenger</header>
-            <form action="#" enctype="multipart/form-data">
+            <form action="#" enctype="multipart/form-data" method="POST" autocomplete="off">
 
                 <div class="error-txt"></div>
                 
@@ -49,7 +49,7 @@
                 </div>
 
             </form>
-            <div class="link">Already a member? <a href="login.html">Login</a></div>
+            <div class="link">Already a member? <a href="login.php">Login</a></div>
         </section>
     </div>
     <script src="javascript/pass-show-hide.js"></script>

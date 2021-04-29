@@ -12,18 +12,18 @@
     <div class="wrapper">
         <section class="form login">
             <header>Chatter Messenger</header>
-            <form action="#">
+            <form action="#" action="POST">
 
-                <div class="error-txt">This is an error message!</div>
+                <div class="error-txt"></div>
 
                 <div class="field input">
                     <label>Email Address</label>
-                    <input type="email" placeholder="Enter your email address">
+                    <input type="email" placeholder="Enter your email address" name="email">
                 </div>
 
                 <div class="field input">
                     <label>Password</label>
-                    <input type="password" placeholder="Enter your password">
+                    <input type="password" placeholder="Enter your password" name="password">
                     <i class="fas fa-eye"></i>
                 </div>
                 
@@ -32,10 +32,12 @@
                 </div>
                 
             </form>
-            <div class="link">Not yet a member? <a href="#">Sign Up</a></div>
+            <div class="link">Not yet a member? <a href="index.php">Sign Up</a></div>
         </section>
     </div>
         <script src="javascript/pass-show-hide.js"></script>
+        <script src="javascript/login.js"></script>
+
 
 
 </body>

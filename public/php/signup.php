@@ -26,9 +26,9 @@ if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password)){
                     $extensions = ['png', 'jpg', 'jpeg'];
                     if(in_array($img_ext, $extensions) === true){
                         $time = time();
-                        $new_img_name = $time.$tmp_name;
+                        $new_img_name = $time.$img_name;
 
-                        if(move_uploaded_file($tmp_name, "../images/".$new_img_name)){
+                        if(move_uploaded_file($tmp_name, "images/".$new_img_name)){
                             $status = "Active Now";
                             $random_id = rand(time(),10000000);
 
@@ -46,13 +46,13 @@ if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password)){
                                 $stmt = $conn -> prepare("SELECT * FROM users WHERE email = :email");
                                 $stmt -> bindParam(':email', $email);
                                 $stmt -> execute();
-                                $data = $stmt -> fetch(PDO::FETCH_ASSOC);
+                                $data = $stmt -> fetch();
                                 if($data > 0){
                                     $_SESSION['unique_id'] = $data['unique_id'];
-                                    echo "Success!";
+                                    echo "Success";
                                 }
                             }else{
-                                echo "An Error Occured!";
+                                echo "Something went wrong!";
                             }
 
                         }
