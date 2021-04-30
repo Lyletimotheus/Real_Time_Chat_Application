@@ -31,72 +31,10 @@ require_once("../database/config.php");
             </header>
             <div class="search">
                 <span class="text">Select a user to start chatting!</span>
-                <input type="text" placeholder="Enter name to search...">
+                <input type="text" placeholder="Enter name to search..." name="searchTerm">
                 <button><i class="fas fa-search"></i></button>
             </div>
             <div class="users-list">
-                 <a href="#">
-                     <div class="content">
-                         <img src="images/img.jpg" alt="">
-                         <div class="details">
-                            <span>Lyle Timotheus</span>
-                            <p>This is a message from someone.</p>
-                        </div>        
-                     </div>
-                     <div class="status-dot"><i class="fas fa-circle"></i></div>
-                 </a>
-                 <a href="#">
-                    <div class="content">
-                        <img src="images/img.jpg" alt="">
-                        <div class="details">
-                           <span>Lyle Timotheus</span>
-                           <p>This is a message from someone.</p>
-                       </div>        
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="images/img.jpg" alt="">
-                        <div class="details">
-                           <span>Lyle Timotheus</span>
-                           <p>This is a message from someone.</p>
-                       </div>        
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="images/img.jpg" alt="">
-                        <div class="details">
-                           <span>Lyle Timotheus</span>
-                           <p>This is a message from someone.</p>
-                       </div>        
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="images/img.jpg" alt="">
-                        <div class="details">
-                           <span>Lyle Timotheus</span>
-                           <p>This is a message from someone.</p>
-                       </div>        
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="images/img.jpg" alt="">
-                        <div class="details">
-                           <span>Lyle Timotheus</span>
-                           <p>This is a message from someone.</p>
-                       </div>        
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-
-
             </div>
         </section>
     </div>
