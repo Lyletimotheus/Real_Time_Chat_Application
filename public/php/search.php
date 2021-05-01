@@ -8,7 +8,7 @@ $stmt = $conn -> prepare("SELECT * FROM users WHERE fname LIKE '%$searchTerm%' O
 $stmt -> execute();
 $result = $stmt -> fetch(PDO::FETCH_ASSOC);
     if($stmt -> rowCount() > 0){
-        // $output .=  "Name:" .$result['fname'];
+        include("data.php");
     }else {
         $output .= "No users found!";
     }

@@ -18,7 +18,6 @@ require_once("../database/config.php");
             if($stmt -> rowCount() > 0){
                 $data = $stmt -> fetch();
             }
- 
             ?>
                 <div class="content">
                 <img src="php/images/<?php echo $data['img'] ?>" alt="">
