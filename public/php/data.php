@@ -1,5 +1,5 @@
 <?php
-$stmt = "";
+
 while($data = $stmt -> fetch()){
     $stmt = $conn -> prepare("SELECT * FROM messages WHERE (incoming_msg_id = :unique_id
                             OR outgoing_msg_id = :outgoing_unique_id) AND 
@@ -29,7 +29,7 @@ while($data = $stmt -> fetch()){
 
     $output .= '<a href="chat.php?user_id='.$data['unique_id'].'">
     <div class="content">
-        <img src="/images/'. $data["img"].'" alt="">
+        <img src="php/images/'. $data["img"].'" alt="">
         <div class="details">
            <span>'.$data["fname"]. ' ' . $data["lname"] .'</span>
            <p>'.$msg.'</p>

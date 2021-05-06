@@ -15,9 +15,9 @@ require_once("../database/config.php");
             $stmt = $conn -> prepare("SELECT * FROM users WHERE unique_id = :unique_id");
             $stmt -> bindParam(':unique_id', $unique_id);
             $stmt -> execute();
-            if($stmt -> rowCount() > 0){
-                $data = $stmt -> fetch();
-                echo '<img src="php/images/$data["img"]" alt="">';
+            $data = $stmt -> fetch();
+            if($result = $stmt -> rowCount() > 0){
+                echo "<img src='php/images/".$data['img']."' alt=''>";
 
             }
             ?>
